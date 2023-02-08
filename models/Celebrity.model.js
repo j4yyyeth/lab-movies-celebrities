@@ -12,12 +12,3 @@ const celebritySchema = new Schema(
 );
 
 module.exports = model('Celebrity', celebritySchema);
-
-// const Customer = mongoose.model(
-//     'Customer', customerSchema);
-  
-// // creating document using create method
-// Customer.create({ name: 'Rahul', orderCount: 5 })
-//     .then(result => {
-//         console.log(result)
-//     })
