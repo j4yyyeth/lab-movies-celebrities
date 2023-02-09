@@ -1,5 +1,15 @@
 <form action="/movies/create" method="POST">
-    <label>Choose an actor:</label>
+    <label> Title:
+        <input type="text" name="title">
+    </label>
+    <label> Genre:
+        <input type="text" name="genre">
+    </label>
+    <label> Plot:
+        <input type="text" name="plot">
+    </label>
+
+    <label>Cast:</label>
     <select name="cast" id="actors" multiple>
         {{#each foundCelebrities}}
         <option value={{_id}}>{{name}}</option>

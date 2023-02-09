@@ -17,7 +17,6 @@ router.get('/create', (req, res, next)=>{
 })
 
 router.post('/create', (req, res, next)=> {
-    console.log("works!!!");
     Movie.create({
         title: req.body.title,
         genre: req.body.genre,
